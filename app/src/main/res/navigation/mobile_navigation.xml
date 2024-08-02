@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/mobile_navigation"
+  app:startDestination="@+id/nav_home">
+
+  <fragment
+    android:id="@+id/nav_home"
+    android:name="com.loyalty.eeppy.ui.home.HomeFragment"
+    android:label="@string/menu_home"
+    tools:layout="@layout/fragment_home" />
+
+  <fragment
+    android:id="@+id/nav_dataset"
+    android:name="com.loyalty.eeppy.ui.dataset.DatasetFragment"
+    android:label="Dataset"
+    tools:layout="@layout/fragment_dataset" />
+
+  <fragment
+    android:id="@+id/nav_feature"
+    android:name="com.loyalty.eeppy.ui.feature.FeatureFragment"
+    android:label="Feature"
+    tools:layout="@layout/fragment_feature" />
+
+  <fragment
+    android:id="@+id/nav_architecture"
+    android:name="com.loyalty.eeppy.ui.achitecture.AchitectureFragment"
+    android:label="architecture"
+    tools:layout="@layout/fragment_feature" />
+</navigation>

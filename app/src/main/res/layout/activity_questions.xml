@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".QuestionsActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="1. What is your Gender?"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="16dp"
+      />
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/question1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+      <AutoCompleteTextView
+        android:id="@+id/auto_complete1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Male/Female"
+        android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="2. What is your Age?"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="16dp"
+      />
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/question2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+      <AutoCompleteTextView
+        android:id="@+id/auto_complete2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="12dp"
+        android:maxLength="3"
+        android:hint="Age"
+        android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="3. What is your Occupation?"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="16dp"
+      />
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/question3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+      <AutoCompleteTextView
+        android:id="@+id/auto_complete3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Job"
+        android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="4. How long do you usually sleep?"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="16dp"
+      />
+    <com.google.android.material.slider.Slider
+      android:id="@+id/question4"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:valueFrom="0.0"
+      android:valueTo="24.0"
+      android:stepSize="1.0"  />
+
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="5. In your opinion, how good is the quality of your sleep?"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="16dp"
+      />
+    <com.google.android.material.slider.Slider
+      android:id="@+id/question5"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:valueFrom="0.0"
+      android:valueTo="10.0"
+      android:stepSize="1.0"  />
+
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="6. How many minutes are you engage in a physical activity daily?"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="16dp"
+      />
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/question6"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+      <AutoCompleteTextView
+        android:id="@+id/auto_complete4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="12dp"
+        android:maxLength="3"
+        android:hint="- Minutes"
+        android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="7. In your opinion, how stressed out are you?"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="16dp"
+      />
+    <com.google.android.material.slider.Slider
+      android:id="@+id/question7"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:valueFrom="0.0"
+      android:valueTo="10.0"
+      android:stepSize="1.0"  />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="8. What is your BMI Category?"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="16dp"
+      />
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/question8"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+      <AutoCompleteTextView
+        android:id="@+id/auto_complete5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Normal/Overweight"
+        android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="9. What is your Systolic Blood Pressure?"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="16dp"
+      />
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/question9"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+      <AutoCompleteTextView
+        android:id="@+id/auto_complete6"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="12dp"
+        android:maxLength="3"
+        android:hint="Systolic"
+        android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="10. What is your Diastolic Blood Pressure?"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="16dp"
+      />
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/question10"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+      <AutoCompleteTextView
+        android:id="@+id/auto_complete7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="12dp"
+        android:maxLength="3"
+        android:hint="Diastolic"
+        android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+  <Button
+    android:id="@+id/clear_btn"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    style="@style/Widget.Material3.Button.ElevatedButton"
+    android:text="clear"
+    android:textColor="@color/rose_red"
+    android:layout_gravity="center"
+    />
+    <Button
+      android:id="@+id/predict_btn"
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+      style="@style/Widget.Material3.Button.ElevatedButton"
+      android:text="Predict"
+      android:layout_gravity="center"
+      />
+  </LinearLayout>
+</ScrollView>

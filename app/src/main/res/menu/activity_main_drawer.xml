@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:showIn="navigation_view">
+
+  <group android:checkableBehavior="single">
+<!--  TODO change icons-->
+    <item
+      android:id="@+id/nav_home"
+      android:icon="@drawable/baseline_home_24"
+      android:title="@string/menu_home" />
+    <item
+      android:id="@+id/nav_dataset"
+      android:icon="@drawable/baseline_dataset_linked_24"
+      android:title="Dataset" />
+    <item
+      android:id="@+id/nav_feature"
+      android:icon="@drawable/baseline_featured_video_24"
+      android:title="Feature" />
+
+    <item
+      android:id="@+id/nav_architecture"
+      android:icon="@drawable/baseline_architecture_24"
+      android:title="Architecture" />
+
+  </group>
+</menu>
